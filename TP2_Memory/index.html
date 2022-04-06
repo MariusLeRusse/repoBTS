@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Memory Ninja</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Style/style.css" rel="stylesheet" type="text/css"/>
+        <script src="Script/script.js"></script>     
+
+    </head>
+    <body>
+        <div id="select">
+
+            <div class="bandeau"> <textarea id="nom1" class="selectJoueur">Joueur 1</textarea></div>
+            <div class="bandeau"> <textarea id="nom2" class="selectJoueur">Joueur 2</textarea></div>
+            <input id="lancer" name="lancer" type="button" onclick="lancer()" value="Lancer la partie" />
+        </div>
+        <div id="jeu">
+
+            <div class="tour" id="tour">j2</div>
+            <div class="triche"id="triche"> 0 </div>
+            <div class="rep" id="rep"> </div>
+            <div id="cartes">
+
+            </div>
+            <div id="score">
+                <h1>Score</h1>
+                <p class="message" id="msg"></p>
+                <div> <p id="p1"></p> <div class="points" id="score1"></div></div>
+                <div> <p id="p2"></p> <div class ="points" id="score2"></div></div>
+            </div>
+        </div>       
+    </body>
+</html>
