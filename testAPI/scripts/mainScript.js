@@ -5,8 +5,7 @@
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
         request.responseType = 'json';
-        request.send();
-
+        request.send();     
 
         request.onload = function () {
             var villes = request.response;
@@ -14,17 +13,12 @@
             insertSelect = "";
             for(let i = 0; i < villes.length; i++){
             //  console.log(villes[i]["nom"]);
-              tabVilles.push(villes[i]["nom"]);
-            
+              tabVilles.push(villes[i]["nom"]);    
             }
-        
          //   console.log(tabVilles);
-
             tabVilles.forEach(element => {
                 insertSelect = insertSelect + "<option value = '" + element + "'>"+ element + "</option></br>" 
             });
-                    
-                document.getElementById("select__ville").innerHTML = insertSelect;
-                
+                document.getElementById("select__ville").innerHTML = insertSelect; 
         }
     }
